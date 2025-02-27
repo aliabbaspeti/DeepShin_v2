@@ -6,25 +6,25 @@ const services = [
         count: 1,
         title: `Cleaning Services`,
         icon: require('./../../images/icon/crane-1.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 2,
         title: 'Event Management',
         icon: require('./../../images/icon/renovation.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 3,
         title: 'Maintenance Services',
         icon: require('./../../images/icon/toolbox.png'),
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: '',
     },
     {
         count: 4,
         title: 'Manpower Services',
         icon: require('./../../images/icon/compass.png'),
-        description: 'You can reduce the workload on your existing team, boosting their efficiency and overall performance.',
+        description: '',
     }
 ]
 
@@ -33,23 +33,23 @@ var img1 = require('./../../images/background/bg-6.png');
 class OurServices extends React.Component {
     componentDidMount(){
         function loadScript(src) {
-           
-          return new Promise(function(resolve, reject){
+        
+        return new Promise(function(resolve, reject){
             var script = document.createElement('script');
             script.src = src;
             script.addEventListener('load', function () {
-              resolve();
+            resolve();
             });
             script.addEventListener('error', function (e) {
-              reject(e);
+            reject(e);
             });
             document.body.appendChild(script);
             document.body.removeChild(script);
-          })
+        })
         };
- 
-      loadScript('./assets/js/masonary.js');
-      
+
+    loadScript('./assets/js/masonary.js');
+    
     };
     render() {
         return (

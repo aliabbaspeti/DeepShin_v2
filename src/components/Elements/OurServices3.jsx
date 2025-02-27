@@ -50,21 +50,21 @@ const services = [
     title: "Window Cleaning",
     flaticon: "flaticon-builder",
     description:
-      "Sparkling windows guaranteed! Professional window cleaning with streak-free results. Safe, eco-friendly, and flexible scheduling.",
+      "Sparkling windows guaranteed! Professional window cleaning with streak-free results.",
   },
   {
     count: 8,
     title: "Water Tank Cleaning",
     flaticon: "flaticon-drill",
     description:
-      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+      "Ensure clean and safe water with our thorough tank cleaning services.",
   },
   {
     count: 9,
-    title: "Duct Cleaning",
+    title: "Paint Service",
     flaticon: "flaticon-art-and-design",
     description:
-      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+      "Revitalize your space with our professional painting services.",
   },
 ];
 
