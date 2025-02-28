@@ -1,7 +1,7 @@
 {
   "name": "deepshine",
   "version": "1.0",
-  "homepage": "./v2",
+  "homepage": "https://deepshine.ae/v2/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
