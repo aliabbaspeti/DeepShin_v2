@@ -38,7 +38,7 @@ import ScrollToTop from './Common/ScrollToTop';
 class Components extends React.Component {
     render() {
         return (
-            <HashRouter basename="/">
+            <HashRouter>
                 <ScrollToTop />
                 <div className="page-wraper">
                         <Routes>
