@@ -5,9 +5,9 @@ const filters = [
     { label: "Building Cleaning", filter: ".cat-1" },
     { label: "Pest Control", filter: ".cat-4" },
     { label: "Event Cleaning", filter: ".cat-2" },
-    { label: "Construction Cleaning", filter: ".cat-3" },
+    { label: "Facade Cleaning", filter: ".cat-3" },
     { label: "Electrical Maintenance", filter: ".cat-5" },
-    { label: "Management Consultancy", filter: ".cat-6" }
+    { label: "Manpower Supply", filter: ".cat-6" }
 ];
 
 const projects = [
@@ -60,27 +60,27 @@ const projects = [
         width: 'col-md-3',
         filter: 'cat-1'
     },
-    {
-        image: require('./../../images/projects/pic-l-5.jpg'),
-        title: 'Lamp decoration',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-6',
-        filter: 'cat-6'
-    },
-    {
-        image: require('./../../images/projects/pic-1.jpg'),
-        title: 'Building house',
-        address: 'Ultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-5'
-    },
-    {
-        image: require('./../../images/projects/pic-2.jpg'),
-        title: 'Spa residence',
-        address: 'Perth, Australia',
-        width: 'col-md-3',
-        filter: 'cat-4'
-    }
+    // {
+    //     image: require('./../../images/projects/pic-l-5.jpg'),
+    //     title: 'Lamp decoration',
+    //     address: 'Aqaba, Jordan',
+    //     width: 'col-md-6',
+    //     filter: 'cat-6'
+    // },
+    // {
+    //     image: require('./../../images/projects/pic-1.jpg'),
+    //     title: 'Building house',
+    //     address: 'Ultanate of Oman',
+    //     width: 'col-md-3',
+    //     filter: 'cat-5'
+    // },
+    // {
+    //     image: require('./../../images/projects/pic-2.jpg'),
+    //     title: 'Spa residence',
+    //     address: 'Perth, Australia',
+    //     width: 'col-md-3',
+    //     filter: 'cat-4'
+    // }
 ]
 
 class OurProject extends React.Component {

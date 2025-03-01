@@ -65,7 +65,7 @@ class OurServices extends React.Component {
                                             <h2 className="text-white text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Services</h2>
                                         </div>
                                     </div>
-                                    <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+                                    {/* <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3> */}
                                 </div>
                                 {/* TITLE END */}
                             </div>

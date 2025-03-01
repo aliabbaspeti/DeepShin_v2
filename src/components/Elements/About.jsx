@@ -6,10 +6,10 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const images = [
     require('./../../images/gallery/pic1.jpg'),
-    require('./../../images/gallery/pic8.jpg'),
-    require('./../../images/gallery/pic9.jpg'),
-    require('./../../images/gallery/pic6.jpg'),
-    require('./../../images/gallery/pic2.jpg')    
+    require('./../../images/gallery/pic8.jpg')
+    // require('./../../images/gallery/pic9.jpg'),
+    // require('./../../images/gallery/pic6.jpg'),
+    // require('./../../images/gallery/pic2.jpg')    
 ]
 
 var bnr1 = require('./../../images/background/bg-6.png');

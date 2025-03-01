@@ -64,7 +64,7 @@ class Header extends React.Component {
                                     </ul>
                                 </div>
                                 <div className="mt-topbar-right clearfix">
-                                    <div className="appint-btn"><NavLink to={"https://wa.me/+971 54 445 4881"} className="site-button">Make an Appointment</NavLink></div>
+                                    <div className="appint-btn"><NavLink to={"https://wa.me/+971544454881"} className="site-button">Make an Appointment</NavLink></div>
                                 </div>
                             </div>
                         </div>

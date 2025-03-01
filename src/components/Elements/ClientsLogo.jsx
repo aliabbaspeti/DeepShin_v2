@@ -12,7 +12,7 @@ const logos = [
     { image: require('./../../images/client-logo/w5.png') },
     { image: require('./../../images/client-logo/w6.png') },
     { image: require('./../../images/client-logo/w7.png') },
-    { image: require('./../../images/client-logo/w8.png') },
+    // { image: require('./../../images/client-logo/w8.png') },
 ]
 
 class ClientsLogo extends React.Component {
