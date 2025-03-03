@@ -7,9 +7,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const images = [
     require('./../../images/gallery/portrait/pic4.jpg'),
     require('./../../images/gallery/portrait/pic5.jpg'),
-    require('./../../images/gallery/portrait/pic6.jpg'),
-    require('./../../images/gallery/portrait/pic7.jpg'),
-    require('./../../images/gallery/portrait/pic1.jpg'),
+    // require('./../../images/gallery/portrait/pic6.jpg'),
+    // require('./../../images/gallery/portrait/pic7.jpg'),
+    // require('./../../images/gallery/portrait/pic1.jpg'),
 ]
 
 var bnr1 = require('./../../images/background/line.png');

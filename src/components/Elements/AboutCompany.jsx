@@ -26,7 +26,7 @@ class AboutCompany extends React.Component {
                                                     <span>Call For a Quote:</span>
                                                     <h4>(+971) 54 445 4881</h4>
                                                 </div>
-                                                <div className="call-estimate bg-dark">
+                                                <div className="call-estimate bg-light">
                                                 <NavLink to={"https://wa.me/971544454881"} className="site-button-secondry btn-effect">Contact us via WhatsApp</NavLink>
                                                 </div>
                                             </div>

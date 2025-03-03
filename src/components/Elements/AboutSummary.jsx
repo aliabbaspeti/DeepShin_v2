@@ -43,7 +43,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic4.jpg')} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/offbldg.jpg')} alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ class AboutSummary extends React.Component {
                                 <div className="col-md-4 col-sm-6">
                                     <div className="our-story-pic-block">
                                         <div className="mt-media our-story-pic">
-                                            <img src={require('./../../images/gallery/portrait/pic7.jpg')} alt=""/>
+                                            <img src={require('./../../images/gallery/portrait/clearningteam.jpg')} alt=""/>
                                         </div>
                                     </div>
                                 </div>

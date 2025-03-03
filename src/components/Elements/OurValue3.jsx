@@ -42,7 +42,7 @@ class OurValue3 extends React.Component {
                                                     <div className="text-black">
                                                         <h4 className="mt-tilte m-t0">Company Profile</h4>
                                                         <p>Learn more about Deepshine and our services. Click the link below to download our company profile. </p>
-                                                        <NavLink to="/project-detail" className="site-button-secondry btn-half"><span> Our Profile</span></NavLink>
+                                                        <NavLink to="../assets/media/DeepShine.pptx" className="site-button-secondry btn-half"><span> Our Profile</span></NavLink>
                                                     </div>
                                                 </div>
                                             </div>
@@ -50,7 +50,7 @@ class OurValue3 extends React.Component {
                                                 <div className="text-white p-r15">
                                                     <h4 className="mt-tilte">Let's help you!</h4>
                                                     <p>We’d love to hear from you! Whether you have questions, feedback, or business inquiries, feel free to reach out..</p>
-                                                    <NavLink to="/project-detail" className="site-button btn-effect">Contact Us</NavLink>
+                                                    <NavLink to="https://wa.me/971544454881" className="site-button btn-effect">Contact Us</NavLink>
                                                 </div>
                                             </div>
                                         </div>
