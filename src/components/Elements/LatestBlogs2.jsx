@@ -4,19 +4,19 @@ import { NavLink } from 'react-router-dom';
 const blogs = [
     {
         image: require('./../../images/blog/latest-blog/pic1.jpg'),
-        title: 'Commercial design for project',
-        description: 'Which is the same as saying through shrinking from toil and pain. These cases are perfectly.',
-        date: '14',
-        month: 'April',
-        year: '2022'
+        // title: 'Commercial design for project',
+        // description: 'Which is the same as saying through shrinking from toil and pain. These cases are perfectly.',
+        // date: '14',
+        // month: 'April',
+        // year: '2022'
     },
     {
         image: require('./../../images/blog/latest-blog/pic2.jpg'),
-        title: 'Our interior design prediction',
-        description: 'Today we can tell you, thanks to your passion, hard work creativity, and expertise.',
-        date: '16',
-        month: 'Feb',
-        year: '2022'
+        // title: 'Our interior design prediction',
+        // description: 'Today we can tell you, thanks to your passion, hard work creativity, and expertise.',
+        // date: '16',
+        // month: 'Feb',
+        // year: '2022'
     }
 ]
 
@@ -47,16 +47,16 @@ class LatestBlogs2 extends React.Component {
                                                 <div className="post-overlay-position">
                                                     <div className="mt-post-meta ">
                                                         <ul>
-                                                            <li className="post-date"><strong className="text-primary">{item.date}</strong> <span>{item.month} {item.year}</span></li>
-                                                            <li className="post-author">By <NavLink to="/post-image">Admin</NavLink> </li>
+                                                            {/* <li className="post-date"><strong className="text-primary">{item.date}</strong> <span>{item.month} {item.year}</span></li> */}
+                                                            {/* <li className="post-author">By <NavLink to="/post-image">Admin</NavLink> </li> */}
                                                         </ul>
                                                     </div>
                                                     <div className="mt-post-title ">
                                                         <h4 className="post-title m-b0">{item.title}</h4>
                                                     </div>
-                                                    <div className="mt-post-text">
+                                                    {/* <div className="mt-post-text">
                                                         <p>{item.description}</p>
-                                                    </div>
+                                                    </div> */}
                                                     <div className="readmore-line">
                                                         <span><NavLink to="/post-image" className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink></span>
                                                     </div>
