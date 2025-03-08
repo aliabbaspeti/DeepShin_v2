@@ -58,9 +58,8 @@ class Header extends React.Component {
                             <div className="row">
                                 <div className="mt-topbar-left clearfix">
                                     <ul className="list-unstyled e-p-bx pull-right">
-                                        <li><i className="fa fa-envelope" /> info@deepshine.ae</li>
-                                        <li><i className="fa fa-phone" />(+971) 5444 548 81</li>
-                                        <li><i className="fa fa-clock-o" />Sun-Sat 9.45 am</li>
+                                        <li><i className="fa fa-envelope" /><a href="mailto:info@deepshine.ae" style={{ color: "inherit", textDecoration: "none" }}>info@deepshine.ae</a></li>
+                                        <li><i className="fa fa-phone" /><a href="https://wa.me/+971544454881" style={{ color: "inherit", textDecoration: "none" }}>054 445 4881</a></li>
                                     </ul>
                                 </div>
                                 <div className="mt-topbar-right clearfix">
@@ -74,7 +73,7 @@ class Header extends React.Component {
                             <div className="container">
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
-                                        <NavLink to={"./"}>
+                                        <NavLink to={"/"}>
                                             <img src={this.state.logo} alt="Shapen" />
                                         </NavLink>
                                     </div>

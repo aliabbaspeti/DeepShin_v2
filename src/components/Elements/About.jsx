@@ -77,7 +77,6 @@ class About extends React.Component {
                                             </div>
                                             
                                         ))}
-                                       
                                     </OwlCarousel>
                                 </div>
                                 <div className="col-md-3 col-sm-12">

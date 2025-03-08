@@ -1,64 +1,64 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const filters = [
-    { label: "Building Cleaning", filter: ".cat-1" },
-    { label: "Pest Control", filter: ".cat-4" },
-    { label: "Event Cleaning", filter: ".cat-2" },
-    { label: "Facade Cleaning", filter: ".cat-3" },
-    { label: "Electrical Maintenance", filter: ".cat-5" },
-    { label: "Manpower Supply", filter: ".cat-6" }
-];
+// const filters = [
+//     // { label: "Building Cleaning", filter: ".cat-1" },
+//     // { label: "Pest Control", filter: ".cat-4" },
+//     // { label: "Event Cleaning", filter: ".cat-2" },
+//     // { label: "Facade Cleaning", filter: ".cat-3" },
+//     // { label: "Electrical Maintenance", filter: ".cat-5" },
+//     // { label: "Manpower Supply", filter: ".cat-6" }
+// ];
 
 const projects = [
     {
         image: require('./../../images/projects/portrait/pic1.jpg'),
-        title: 'Chair Furniture',
-        address: 'Muscat, Sultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-2'
+        // title: 'Chair Furniture',
+        // address: 'Muscat, Sultanate of Oman',
+        // width: 'col-md-3',
+        // filter: 'cat-2'
     },
     {
         image: require('./../../images/projects/portrait/pic2.jpg'),
-        title: 'Furniture',
-        address: 'North House',
-        width: 'col-md-3',
-        filter: 'cat-2'
+        // title: 'Furniture',
+        // address: 'North House',
+        // width: 'col-md-3',
+        // filter: 'cat-2'
     },
     {
         image: require('./../../images/projects/portrait/pic3.jpg'),
-        title: 'Living room',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-3',
-        filter: 'cat-6'
+        // title: 'Living room',
+        // address: 'Aqaba, Jordan',
+        // width: 'col-md-3',
+        // filter: 'cat-6'
     },
     {
         image: require('./../../images/projects/portrait/pic4.jpg'),
-        title: 'Dream Workspace',
-        address: 'Perth, Australia',
-        width: 'col-md-3',
-        filter: 'cat-6'
+        // title: 'Dream Workspace',
+        // address: 'Perth, Australia',
+        // width: 'col-md-3',
+        // filter: 'cat-6'
     },
     {
         image: require('./../../images/projects/portrait/pic5.jpg'),
-        title: 'Decore',
-        address: 'Aqaba, Jordan',
-        width: 'col-md-3',
-        filter: 'cat-3'
+        // title: 'Decore',
+        // address: 'Aqaba, Jordan',
+        // width: 'col-md-3',
+        // filter: 'cat-3'
     },
     {
         image: require('./../../images/projects/portrait/pic6.jpg'),
-        title: 'Modern Decoration',
-        address: 'Muscat, Sultanate of Oman',
-        width: 'col-md-3',
-        filter: 'cat-3'
+        // title: 'Modern Decoration',
+        // address: 'Muscat, Sultanate of Oman',
+        // width: 'col-md-3',
+        // filter: 'cat-3'
     },
     {
         image: require('./../../images/projects/portrait/pic7.jpg'),
-        title: 'Bathroom',
-        address: 'North House',
-        width: 'col-md-3',
-        filter: 'cat-1'
+        // title: 'Bathroom',
+        // address: 'North House',
+        // width: 'col-md-3',
+        // filter: 'cat-1'
     },
     // {
     //     image: require('./../../images/projects/pic-l-5.jpg'),
@@ -115,7 +115,7 @@ class OurProject extends React.Component {
                         <div className="section-head">
                             <div className="mt-separator-outer separator-left">
                                 <div className="mt-separator">
-                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Project</h2>
+                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Clients</h2>
                                 </div>
                             </div>
                         </div>
@@ -123,21 +123,21 @@ class OurProject extends React.Component {
                         <div className="section-content">
                             <div className="portfolio-wrap row mfp-gallery product-stamp clearfix">
                                 {/* COLUMNS 1 */}
-                                <div className="stamp col-md-3 col-sm-6 m-b30">
-                                    <div className="bg-gray p-a30">
+                                <div className="stamp col-md-4 col-sm-6 m-b30">
+                                    {/* <div className="bg-gray p-a30"/> */}
                                         <div className="filter-wrap">
                                             <ul className="filter-navigation masonry-filter text-uppercase">
-                                                <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
-                                                {filters.map((item, index) => (
+                                                {/* <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li> */}
+                                                {/* {filters.map((item, index) => (
                                                     <li key={index}><NavLink to={"#"} data-filter={item.filter} data-hover={item.label}>{item.label}</NavLink></li>
-                                                ))}
+                                                ))} */}
                                             </ul>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                                 {/* COLUMNS 2 */}
                                 {projects.map((item, index) => (
-                                   <div key={index} className={`${item.filter} masonry-item ${item.width} col-sm-6 m-b30`}>
+                                <div key={index} className={`${item.filter} masonry-item ${item.width} col-sm-6 m-b30`}>
                                         <div className="mt-box   image-hover-block">
                                             <div className="mt-thum-bx">
                                                 <img src={item.image} alt=""/>
@@ -154,7 +154,7 @@ class OurProject extends React.Component {
                         </div>
                     </div>
                     <div className="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-                        <strong>Projects</strong>
+                        <strong>Clients</strong>
                     </div>
                 </div>
             </>

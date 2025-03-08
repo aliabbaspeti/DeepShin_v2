@@ -16,7 +16,7 @@ class Footer extends React.Component {
         
         return (
             <>
-                <footer className="site-footer footer-large  footer-dark	footer-wide">
+                <footer className="site-footer footer-large  footer-light footer-wide">
                     <div className="container call-to-action-wrap bg-no-repeat bg-center" style={{ backgroundImage: 'url('+bgimage+')' }}>
                         <div className="p-a30 bg-primary ">
                             <div className="row">
@@ -54,10 +54,10 @@ class Footer extends React.Component {
                                 <div className="col-lg-3 col-md-2 col-sm-2">
                                     <div className="widget widget_about">
                                         {/*<h4 class="widget-title">About Company</h4>*/}
-                                        {/* <div className="logo-footer clearfix p-b15">
+                                        <div className="logo-footer clearfix p-b15">
                                             <NavLink to={"./"}><img src={this.currentstate.logo} alt="" /></NavLink>
-                                        </div> */}
-                                        <p className="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>
+                                        </div>
+                                        <p className="max-w400">Recognized as a top service provider, winning prestigious awards for outstanding customer service and commitment to quality.</p>
                                         <ul className="social-icons  mt-social-links">
                                             <li><NavLink to={"https://www.facebook.com/profile.php?id=61568475703720/"} className="facebook"><i className="fa fa-facebook" /></NavLink></li>
                                             <li><NavLink to={"https://www.linkedin.com/company/deep-shine-technical-services/"} className="linkedin"><i className="fa fa-linkedin" /></NavLink></li>

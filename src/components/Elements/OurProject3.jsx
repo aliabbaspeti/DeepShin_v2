@@ -1,57 +1,57 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const filters = [
-    { label: "Cleaning", filter: ".cat-1" },
-    { label: "Maintenance", filter: ".cat-2" },
-    { label: "Window Cleaning", filter: ".cat-3" },
-    { label: "Pest Control", filter: ".cat-4" },
-    { label: "Event Cleaning", filter: ".cat-5" },
+// const filters = [
+//     { label: "Cleaning", filter: ".cat-1" },
+//     { label: "Maintenance", filter: ".cat-2" },
+//     { label: "Window Cleaning", filter: ".cat-3" },
+//     { label: "Pest Control", filter: ".cat-4" },
+//     { label: "Event Cleaning", filter: ".cat-5" },
 
-];
+// ];
 
 const projects = [
     {
         image: require('./../../images/services/service-projects/w1.jpg'),
-        title: 'Shopping Mall',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-1'
+        // title: 'Shopping Mall',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-1'
     },
     {
         image: require('./../../images/services/service-projects/w2.jpg'),
-        title: 'Hospital Building',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-2'
+        // title: 'Hospital Building',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-2'
     },
     {
         image: require('./../../images/services/service-projects/w3.jpg'),
-        title: 'Garden House',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-3'
+        // title: 'Garden House',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-3'
     },
     {
         image: require('./../../images/services/service-projects/w4.jpg'),
-        title: 'Villa',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-4'
+        // title: 'Villa',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-4'
     },
     {
         image: require('./../../images/services/service-projects/w5.jpg'),
-        title: 'Road Construction',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-5'
+        // title: 'Road Construction',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-5'
     },
     {
         image: require('./../../images/services/service-projects/w6.jpg'),
-        title: 'Bridge Construction',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-4'
+        // title: 'Bridge Construction',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-4'
     },
     {
         image: require('./../../images/services/service-projects/w7.jpg'),
-        title: 'Building Renovation',
-        address: 'Muscat, Sultanate of Oman',
-        filter: 'cat-3'
+        // title: 'Building Renovation',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-3'
     },
     // {
     //     image: require('./../../images/services/service-projects/dam-construction.jpg'),
@@ -101,10 +101,10 @@ class OurProject3 extends React.Component {
                         {/* PAGINATION START */}
                         <div className="filter-wrap p-b15 center">
                             <ul className="masonry-filter link-style  text-uppercase white">
-                                <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
-                                {filters.map((item, index) => (
+                                {/* <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li> */}
+                                {/* {filters.map((item, index) => (
                                     <li key={index}><NavLink to={"#"} data-filter={item.filter} data-hover={item.label}>{item.label}</NavLink></li>
-                                ))}
+                                ))} */}
 
                             </ul>
                         </div>
