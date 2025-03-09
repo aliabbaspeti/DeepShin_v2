@@ -78,7 +78,7 @@ class OurMission extends React.Component {
                         </div>
                     </div>
                     <div className="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-                        <strong>Mission</strong>
+                        <strong>Our Mission</strong>
                     </div>
                 </div>
             </>

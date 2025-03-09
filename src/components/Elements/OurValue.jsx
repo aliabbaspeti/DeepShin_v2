@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 //import { NavLink } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
-var img1 = require('./../../images/video-bg.jpg');
+// var img1 = require('./../../images/video-bg.jpg');
 
 class OurValue extends React.Component {
     componentDidMount() {
@@ -55,23 +55,23 @@ class OurValue extends React.Component {
                                             <p>Managing Director</p>
                                         </div>
                                     </div>
-                                    <div className="video-section-full bg-no-repeat bg-cover overlay-wraper" style={{ backgroundImage: 'url(' + img1 + ')' }}>
-                                        {/* <div className="overlay-main bg-black opacity-07" /> */}
+                                    {/* <div className="video-section-full bg-no-repeat bg-cover overlay-wraper" style={{ backgroundImage: 'url(' + img1 + ')' }}>
+                                        {/* <div className="overlay-main bg-black opacity-07" /> 
                                         <div className="video-section-inner">
                                             <div className="video-section-content">
                                                 
-                                                {/* <div className="video-section-left">
+                                                <div className="video-section-left">
                                                     <button type="button" className="play-now" data-toggle="modal" data-target="#myModal2">
                                                         <i className="icon fa fa-play" />
                                                         <span className="ripple" />
                                                     </button>
-                                                </div> */}
-                                                {/* <div className="video-section-right">
+                                                </div> 
+                                                <div className="video-section-right">
                                                 <NavLink to={"/Deepshine_presentation.pptx"} className="font-weight-600 text-uppercase" data-toggle="modal" data-target="#myModal">Video Presentation</NavLink>
-                                                </div> */}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="col-md-3 col-sm-6">
                                     <div className="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
@@ -133,6 +133,8 @@ class OurValue extends React.Component {
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <ReactPlayer url='https://vimeo.com/34741214' />
+                            <div className="hilite-title text-left p-l50 text-uppercase text-pop-up-top"/>
+                        <strong>Our Value</strong>
                         </div>
                     </div>
                 </div>
