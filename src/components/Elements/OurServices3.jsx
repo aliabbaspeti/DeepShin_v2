@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Contact from "../Pages/Contact";
 
 const services = [
@@ -49,21 +50,21 @@ const services = [
     title: "Window Cleaning",
     flaticon: "flaticon-builder",
     description:
-      "Sparkling windows guaranteed! Professional window cleaning with streak-free results.",
+      "Sparkling windows guaranteed! Professional window cleaning with streak-free results. Safe, eco-friendly, and flexible scheduling.",
   },
   {
     count: 8,
     title: "Water Tank Cleaning",
     flaticon: "flaticon-drill",
     description:
-      "Ensure clean and safe water with our thorough tank cleaning services.",
+      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
   },
   {
     count: 9,
-    title: "Paint Service",
+    title: "Duct Cleaning",
     flaticon: "flaticon-art-and-design",
     description:
-      "Revitalize your space with our professional painting services.",
+      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
   },
 ];
 

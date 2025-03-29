@@ -1,128 +1,304 @@
-import React from 'react';
-import Header from './../Common/Header';
-import Footer from './../Common/Footer';
-import Banner from './../Elements/Banner';
-import GoogleMapReact from 'google-map-react';
+import React, { useState } from "react";
+import Header from "./../Common/Header";
+import Footer from "./../Common/Footer";
+import Banner from "./../Elements/Banner";
+import GoogleMapReact from "google-map-react";
+import emailjs from "@emailjs/browser";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+} from "@mui/material";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-var bnrimg = require('./../../images/banner/4.jpg');
+var bnrimg = require("./../../images/banner/4.jpg");
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class ContactUs extends React.Component {
-    render() {
-        const defaultProps = {
-            center: {
-            lat: 34.073280,
-            lng: -118.251410
-            },
-            zoom: 12
-        };
-        return (
-            <>
-                <Header />
-                <div className="page-content">
-                <Banner title="Putting a plan to action, to assure your satisfaction!" pagename="Contact Us" bgimage={bnrimg}/>
-                
-                    {/* SECTION CONTENTG START */}
-                    <div className="section-full p-tb80 inner-page-padding">
-                        {/* LOCATION BLOCK*/}
-                        <div className="container">
-                            {/* GOOGLE MAP & CONTACT FORM */}
-                            <div className="section-content">
-                                {/* CONTACT FORM*/}
-                                <div className="row">
-                                    <div className="col-md-8 col-sm-6">
-                                        <form className="contact-form cons-contact-form" method="post" action="form-handler.php">
-                                            <div className="contact-one m-b30">
-                                                {/* TITLE START */}
-                                                <div className="section-head">
-                                                    <div className="mt-separator-outer separator-left">
-                                                        <div className="mt-separator">
-                                                            <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Get</span> In touch</h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {/* TITLE END */}
-                                                <div className="form-group">
-                                                    <input name="username" type="text" required className="form-control" placeholder="Name" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <input name="email" type="text" className="form-control" required placeholder="Email" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
-                                                </div>
-                                                <div className="text-right">
-                                                    <button name="submit" type="submit" value="Submit" className="site-button btn-effect">submit
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className="col-md-4 col-sm-6">
-                                        <div className="contact-info m-b30">
-                                            {/* TITLE START */}
-                                            <div className="section-head">
-                                                <div className="mt-separator-outer separator-left">
-                                                    <div className="mt-separator">
-                                                        <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Contact</span> Info</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* TITLE END */}
-                                            <div className="bg-dark p-a20 text-white">
-                                                <div className="mt-icon-box-wraper left p-b40">
-                                                    <div className="icon-xs"><i className="fa fa-phone" /></div>
-                                                    <div className="icon-content">
-                                                        <h5 className="m-t0 font-weight-500">Phone number</h5>
-                                                        <p>(+971) 544 454 881</p>
-                                                    </div>
-                                                </div>
-                                                <div className="mt-icon-box-wraper left p-b40">
-                                                    <div className="icon-xs"><i className="fa fa-envelope" /></div>
-                                                    <div className="icon-content">
-                                                        <h5 className="m-t0 font-weight-500">Email address</h5>
-                                                        <p>info@deepshine.ae</p>
-                                                    </div>
-                                                </div>
-                                                <div className="mt-icon-box-wraper left">
-                                                    <div className="icon-xs"><i className="fa fa-map-marker" /></div>
-                                                    <div className="icon-content">
-                                                        <h5 className="m-t0 font-weight-500">Address info</h5>
-                                                        <p>Office No 5 Naseer Lootah Building, Airport Road Cargo Village, Dubai - UAE</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="gmap-outline">
-                                <div style={{ height: '400px', width: '100%' }}>
-                                    <GoogleMapReact
-                                        bootstrapURLKeys={{ key: "AIzaSyAfY1DRbspf6E3jYUso-PeI_tdfRXA59i0" }}
-                                        defaultCenter={defaultProps.center}
-                                        defaultZoom={defaultProps.zoom}
-                                    >
-                                        <AnyReactComponent
-                                        lat={34.073280}
-                                        lng={-118.251410}
-                                        text={<i className="fa fa-map-marker" />}
-                                        />
-                                    </GoogleMapReact>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* SECTION CONTENT END */}
-                </div>
+const ContactUs = () => {
+  const [errorDialog, setErrorDialog] = useState(false); // Add error dialog state
+  const [errorMessage, setErrorMessage] = useState("");
 
+  const initialFormState = {
+    name: "",
+    email: "",
+    message: "",
+    service: "Nawab",
+    phone: "",
+  };
 
-                <Footer />
+  const defaultProps = {
+    center: { lat: 34.07328, lng: -118.25141 },
+    zoom: 12,
+  };
 
-            </>
-        );
+  // State to store form data
+  const [formData, setFormData] = useState(initialFormState);
+  const [errors, setErrors] = useState({});
+  const [successDialog, setSuccessDialog] = useState(false);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  const validateForm = () => {
+    let newErrors = {};
+    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+    if (!formData.service) newErrors.service = "Please select a service";
+    if (!formData.message) newErrors.message = "Message cannot be empty";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // Handle form submission
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent form from refreshing the page
+
+    if (!validateForm()) {
+      setErrorMessage("Please fill in all required fields correctly."); // Set error message
+      setErrorDialog(true); // Show error dialog
+      return;
+    }
+
+    const templateParams = {
+      to_name: formData.name,
+      from_name: formData.email,
+      message: formData.message,
+      from_service: formData.service,
     };
+
+    emailjs
+      .send(
+        "service_8z0vb9x",
+        "template_f0xvr1k",
+        templateParams,
+        "RWNIgVNXRLcYGhkF8"
+      )
+      .then(() => {
+        setFormData(initialFormState);
+        setErrors({});
+        setSuccessDialog(true);
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        setErrorMessage("Failed to send email. Please try again later.");
+        setErrorDialog(true);
+      });
+  };
+
+  return (
+    <>
+      <Header />
+      <div className="page-content">
+        <Banner
+          title="Putting a plan to action, to assure your satisfaction!"
+          pagename="Contact Us"
+          bgimage={bnrimg}
+        />
+
+        {/* SECTION CONTENT START */}
+        <div className="section-full p-tb80 inner-page-padding">
+          <div className="container">
+            <div className="section-content">
+              <div className="row">
+                <div className="col-md-8 col-sm-6">
+                  <form
+                    className="contact-form cons-contact-form"
+                    onSubmit={handleSubmit}
+                  >
+                    <div className="contact-one m-b30">
+                      <div className="section-head">
+                        <div className="mt-separator-outer separator-left">
+                          <div className="mt-separator">
+                            <h2 className="text-uppercase sep-line-one">
+                              <span className="font-weight-300 text-primary">
+                                Get
+                              </span>{" "}
+                              In touch
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <input
+                          name="name"
+                          type="text"
+                          required
+                          className="form-control"
+                          placeholder="Name"
+                          value={formData.name}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <input
+                          name="email"
+                          type="email"
+                          className="form-control"
+                          required
+                          placeholder="Email"
+                          value={formData.email}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          name="phone"
+                          id="Phone"
+                          required
+                          className="form-control"
+                          placeholder="Phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                        />
+
+                        <span className="spin" />
+                      </div>
+
+                      <div className="form-group">
+                        <textarea
+                          name="message"
+                          rows={4}
+                          className="form-control"
+                          required
+                          placeholder="Message"
+                          value={formData.message}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="text-right">
+                        <button
+                          name="submit"
+                          type="submit"
+                          className="site-button btn-effect"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div className="col-md-4 col-sm-6">
+                  <div className="contact-info m-b30">
+                    <div className="section-head">
+                      <div className="mt-separator-outer separator-left">
+                        <div className="mt-separator">
+                          <h2 className="text-uppercase sep-line-one">
+                            <span className="font-weight-300 text-primary">
+                              Contact
+                            </span>{" "}
+                            Info
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-dark p-a20 text-white">
+                      <div className="mt-icon-box-wraper left p-b40">
+                        <div className="icon-xs">
+                          <i className="fa fa-phone" />
+                        </div>
+                        <div className="icon-content">
+                          <h5 className="m-t0 font-weight-500">Phone number</h5>
+                          <p>(+971) 544 454 881</p>
+                        </div>
+                      </div>
+                      <div className="mt-icon-box-wraper left p-b40">
+                        <div className="icon-xs">
+                          <i className="fa fa-envelope" />
+                        </div>
+                        <div className="icon-content">
+                          <h5 className="m-t0 font-weight-500">
+                            Email address
+                          </h5>
+                          <p>info@deepshine.ae</p>
+                        </div>
+                      </div>
+                      <div className="mt-icon-box-wraper left">
+                        <div className="icon-xs">
+                          <i className="fa fa-map-marker" />
+                        </div>
+                        <div className="icon-content">
+                          <h5 className="m-t0 font-weight-500">Address info</h5>
+                          <p>
+                            Office No 5 Naseer Lootah Building, Airport Road
+                            Cargo Village, Dubai - UAE
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="gmap-outline">
+              <div style={{ height: "400px", width: "100%" }}>
+                <GoogleMapReact
+                  bootstrapURLKeys={{
+                    key: "AIzaSyAfY1DRbspf6E3jYUso-PeI_tdfRXA59i0",
+                  }}
+                  defaultCenter={defaultProps.center}
+                  defaultZoom={defaultProps.zoom}
+                >
+                  <AnyReactComponent
+                    lat={34.07328}
+                    lng={-118.25141}
+                    text={<i className="fa fa-map-marker" />}
+                  />
+                </GoogleMapReact>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Dialog
+          open={errorDialog}
+          onClose={() => setErrorDialog(false)}
+          fullWidth
+          maxWidth="xs"
+        >
+          <DialogTitle
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              fontSize: "30px",
+            }}
+          >
+            <CheckCircleOutlineIcon sx={{ color: "red", fontSize: "30px" }} />{" "}
+            Error
+          </DialogTitle>
+          <DialogContent dividers>{errorMessage}</DialogContent>
+          <DialogActions>
+            <Button
+              onClick={() => setErrorDialog(false)}
+              variant="contained"
+              sx={{
+                color: "black",
+                backgroundColor: "#ff5202",
+                borderRadius: "20px",
+              }}
+            >
+              OK
+            </Button>
+          </DialogActions>
+        </Dialog>
+
+        {/* SECTION CONTENT END */}
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default ContactUs;

@@ -106,7 +106,7 @@ class OurProject2 extends React.Component {
                                             <div className="figcaption">
                                                 <h4>{item.title}</h4>
                                                 <p>{item.category}</p>
-                                                <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
+                                                <NavLink to="#"><i className="link-plus bg-primary" /></NavLink>
                                             </div>
                                         </div>
                                     </div>

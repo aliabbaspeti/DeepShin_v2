@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 // const filters = [
 //     { label: "Cleaning", filter: ".cat-1" },
@@ -61,7 +61,7 @@ const projects = [
     // },
 ]
 
-var img1 = require('./../../images/background/bg5.jpg');
+var img1 = require('./../../images/background/bg6.jpg');
 
 class OurProject3 extends React.Component {
     componentDidMount() {
@@ -121,7 +121,7 @@ class OurProject3 extends React.Component {
                                             <h4 className="mt-tilte m-b10 m-t0">{item.title}</h4>
                                             <p className="m-b0">{item.address}</p>
                                         </div>
-                                        <NavLink to="/project-detail"></NavLink>
+                                        {/* <NavLink to="#"></NavLink> */}
                                     </div>
                                 </div>
                             ))}
