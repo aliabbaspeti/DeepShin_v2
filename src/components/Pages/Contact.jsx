@@ -68,10 +68,11 @@ function Contact({ open, handleClose }) {
       from_name: formData.email,
       from_service: formData.service,
       message: formData.message,
+      from_number: formData.phone,
     };
 
     emailjs
-      .send("service_8z0vb9x", "template_f0xvr1k", templateParams, "RWNIgVNXRLcYGhkF8")
+      .send("service_0xpo6ab", "template_go3j1mj", templateParams, "mfYnniRros4AkGI1W")
       .then(() => {
         setFormData(initialFormState);
         setErrors({});

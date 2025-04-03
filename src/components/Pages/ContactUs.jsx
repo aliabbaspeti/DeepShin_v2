@@ -18,14 +18,16 @@ var bnrimg = require("./../../images/banner/4.jpg");
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const ContactUs = () => {
-  const [errorDialog, setErrorDialog] = useState(false); // Add error dialog state
+  const [errorDialog, setErrorDialog] = useState(false);
+  const [successDialog, setSuccessDialog] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("Form submitted successfully!");
 
   const initialFormState = {
     name: "",
     email: "",
     message: "",
-    service: "Nawab",
+    service: "",
     phone: "",
   };
 
@@ -37,7 +39,6 @@ const ContactUs = () => {
   // State to store form data
   const [formData, setFormData] = useState(initialFormState);
   const [errors, setErrors] = useState({});
-  const [successDialog, setSuccessDialog] = useState(false);
 
   // Handle input changes
   const handleChange = (e) => {
@@ -53,39 +54,34 @@ const ContactUs = () => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Invalid email format";
     }
-    if (!formData.service) newErrors.service = "Please select a service";
+    // if (!formData.service) newErrors.service = "Please select a service";
     if (!formData.message) newErrors.message = "Message cannot be empty";
-
+    
     setErrors(newErrors);
+    console.log("Validation Errors:", newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submission
-
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent form from refreshing the page
-
+    e.preventDefault();
     if (!validateForm()) {
-      setErrorMessage("Please fill in all required fields correctly."); // Set error message
-      setErrorDialog(true); // Show error dialog
+      setErrorMessage("Please fill in all required fields correctly.");
+      setErrorDialog(true);
       return;
     }
 
     const templateParams = {
       to_name: formData.name,
       from_name: formData.email,
+      from_number: formData.phone,
       message: formData.message,
-      from_service: formData.service,
     };
 
+    console.log("Sending email with:", templateParams);
+
     emailjs
-      .send(
-        "service_8z0vb9x",
-        "template_f0xvr1k",
-        templateParams,
-        "RWNIgVNXRLcYGhkF8"
-      )
-      .then(() => {
+      .send("service_0xpo6ab", "template_go3j1mj", templateParams, "mfYnniRros4AkGI1W")
+      .then((response) => {
         setFormData(initialFormState);
         setErrors({});
         setSuccessDialog(true);
@@ -123,7 +119,7 @@ const ContactUs = () => {
                           <div className="mt-separator">
                             <h2 className="text-uppercase sep-line-one">
                               <span className="font-weight-300 text-primary">
-                                Get
+                                Getss
                               </span>{" "}
                               In touch
                             </h2>
@@ -166,7 +162,6 @@ const ContactUs = () => {
 
                         <span className="spin" />
                       </div>
-
                       <div className="form-group">
                         <textarea
                           name="message"
@@ -261,40 +256,19 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <Dialog
-          open={errorDialog}
-          onClose={() => setErrorDialog(false)}
-          fullWidth
-          maxWidth="xs"
-        >
-          <DialogTitle
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              fontSize: "30px",
-            }}
-          >
-            <CheckCircleOutlineIcon sx={{ color: "red", fontSize: "30px" }} />{" "}
-            Error
-          </DialogTitle>
-          <DialogContent dividers>{errorMessage}</DialogContent>
-          <DialogActions>
-            <Button
-              onClick={() => setErrorDialog(false)}
-              variant="contained"
-              sx={{
-                color: "black",
-                backgroundColor: "#ff5202",
-                borderRadius: "20px",
-              }}
-            >
-              OK
-            </Button>
-          </DialogActions>
-        </Dialog>
-
-        {/* SECTION CONTENT END */}
+        
+        <Dialog open={errorDialog || successDialog} onClose={() => { setErrorDialog(false); setSuccessDialog(false); }} fullWidth maxWidth="xs">
+        <DialogTitle sx={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "30px" }}>
+          <CheckCircleOutlineIcon sx={{ color: errorDialog ? "red" : "green", fontSize: "30px" }} />
+          {errorDialog ? "Error" : "Success"}
+        </DialogTitle>
+        <DialogContent dividers>{errorDialog ? errorMessage : successMessage}</DialogContent>
+        <DialogActions>
+          <Button onClick={() => { setErrorDialog(false); setSuccessDialog(false); }} variant="contained" sx={{ color: "black", backgroundColor: errorDialog ? "#ff5202" : "#4caf50", borderRadius: "20px" }}>
+            OK
+          </Button>
+        </DialogActions>
+      </Dialog>
       </div>
       <Footer />
     </>

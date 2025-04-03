@@ -52,7 +52,7 @@ class Blogs2 extends React.Component {
                                     <div className="col-md-4 col-sm-6" key={index}>
                                         <div className="blog-post blog-grid date-style-2 bg-white">
                                             <div className="mt-post-media mt-img-effect zoom-slow">
-                                               <NavLink to={"/post-image"}><img src={item.image} alt=""/></NavLink>
+                                            <NavLink to={"/post-image"}><img src={item.image} alt=""/></NavLink>
                                             </div>
                                             <div className="mt-post-info p-a30">
                                                 <div className="mt-post-title ">
@@ -70,7 +70,7 @@ class Blogs2 extends React.Component {
                                                 </div>
                                                 <div className="clearfix">
                                                     <div className="mt-post-readmore pull-left">
-                                                       <NavLink to={"/post-image"} title="READ MORE" rel="bookmark" className="site-button-link">Read More<i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                                    <NavLink to={"/post-image"} title="READ MORE" rel="bookmark" className="site-button-link">Read More<i className="fa fa-angle-right arrow-animation" /></NavLink>
                                                     </div>
                                                     <div className="widget_social_inks pull-right">
                                                         <ul className="social-icons social-radius social-dark m-b0">
