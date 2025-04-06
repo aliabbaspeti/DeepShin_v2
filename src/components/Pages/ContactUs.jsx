@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-var bnrimg = require("./../../images/banner/4.jpg");
+var bnrimg = require("./../../images/banner/contactus_banner.jpg");
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 

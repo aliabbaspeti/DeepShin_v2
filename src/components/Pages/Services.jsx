@@ -7,9 +7,9 @@ import Specialization3 from '../Elements/Specialization3';
 import OurServices3 from '../Elements/OurServices3';
 import OurValue3 from '../Elements/OurValue3';
 import OurProject3 from '../Elements/OurProject3';
-import Faq from '../Elements/Faq';
+// import Faq from '../Elements/Faq';
 
-var bnrimg = require('./../../images/banner/1.jpg');
+var bnrimg = require('./../../images/banner/service_banner.jpg');
 
 class Services extends React.Component {
     render() {
@@ -24,14 +24,10 @@ class Services extends React.Component {
                     <OurServices3 />
                     <OurValue3 />
                     <OurProject3 />
-                    <Faq />
+                    {/* <Faq /> */}
                 <Footer />
                     
-                </div>
-
-                
-               
-
+                </div>               
             </>
         );
     };

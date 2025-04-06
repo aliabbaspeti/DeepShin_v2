@@ -29,7 +29,7 @@ class Navigation extends React.Component {
             <>
                 <div className={(this.props.bgcolor !== '') ? `header-nav navbar-collapse collapse ${this.props.bgcolor}` : 'header-nav navbar-collapse collapse'}>
                     <ul className="nav navbar-nav">
-                        <li className="active">
+                        <li className="">
                             <NavLink to={"/"}>Home</NavLink>
                             {/* <ul className="sub-menu">
                                 <li>

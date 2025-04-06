@@ -41,7 +41,7 @@ class Header extends React.Component {
         window.addEventListener('scroll', handleScroll);
 
         window.updateTopMostParent = (logopath) => {
-           this.setState({ logo: logopath }); 
+        this.setState({ logo: logopath }); 
         };
     }
 
@@ -121,7 +121,7 @@ class Header extends React.Component {
                                                     <div className="icon-xs m-b20 scale-in-center"><i className="fa fa-map-marker" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Address info</h5>
-                                                        <p>Office No 5Naseer Lootah Building, 
+                                                        <p>Office No 5 Naseer Lootah Building, 
                                                         <p></p>Airport Road Cargo Village, Dubai - UAE</p>
                                                     </div>
                                                 </div>
@@ -131,13 +131,13 @@ class Header extends React.Component {
                                                     <li><NavLink to={"https://www.facebook.com/deepshine.ae/"} className="facebook"><i className="fa fa-facebook" /></NavLink></li>
                                                     <li><NavLink to={"https://www.linkedin.com/company/deep-shine-technical-services/"} className="linkedin"><i className="fa fa-linkedin" /></NavLink></li>
                                                     <li><NavLink to={"https://www.instagram.com/deepshine_technical_services?igsh=M2Q1OXp0amJrd3Jk"} className="instagram"><i className="fa fa-instagram" /></NavLink></li>
-                                                    {/* <li><NavLink to={"#"} className="tumblr"><i className="fa fa-tumblr" /></NavLink></li> */}
+                                                    <li><NavLink to={"https://wa.me/+971544454881"} className="whatsapp"><i className="fa fa-whatsapp" /></NavLink></li>
                                                     {/* <li><NavLink to={"#"} className="twitter"><i className="fa fa-twitter" /></NavLink></li> */}
                                                     {/* <li><NavLink to={"#"} className="youtube"><i className="fa fa-youtube" /></NavLink></li> */}
                                                 </ul>
                                             </div>
                                             <div className="text-center">
-                                                <h4 className="font-weight-600">© 2025 DEEP SHINE</h4>
+                                                <h4 className="font-weight-600">© 2025 DEEPSHINE LLC</h4>
                                             </div>
                                         </div>
                                     </div>

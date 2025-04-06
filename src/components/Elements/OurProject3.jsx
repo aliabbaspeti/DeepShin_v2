@@ -92,7 +92,7 @@ class OurProject3 extends React.Component {
                         {/* TITLE START */}
                         <div className="section-head">
                             <div className="mt-separator-outer separator-center">
-                                <div className="mt-separator text-white">
+                                <div className="mt-separator text-black">
                                     <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Project</h2>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ class OurProject3 extends React.Component {
                         {/* GALLERY CONTENT START */}
                         <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                             {projects.map((item, index) => (
-                                <div key={index} className={`${item.filter} masonry-item col-md-3 col-sm-6 m-b30`}>
+                                <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
                                     <div className="mt-box   image-hover-block">
                                         <div className="mt-thum-bx">
                                             <img src={item.image} alt=""/>

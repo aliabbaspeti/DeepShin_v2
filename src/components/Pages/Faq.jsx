@@ -49,7 +49,7 @@ class Faq extends React.Component {
                                             <h4 className="acod-title">
                                                 <a data-toggle="collapse" href="#collapseTwo5" className="collapsed" data-parent="#accordion5">
                                                     What services do we offer?
-                  <span className="indicator"><i className="fa fa-plus" /></span>
+                <span className="indicator"><i className="fa fa-plus" /></span>
                                                 </a>
                                             </h4>
                                         </div>
@@ -62,7 +62,7 @@ class Faq extends React.Component {
                                             <h4 className="acod-title">
                                                 <a data-toggle="collapse" href="#collapseThree5" className="collapsed" data-parent="#accordion5">
                                                     Why do you have a design fee and purchasing fee on the product?
-                  <span className="indicator"><i className="fa fa-plus" /></span>
+                <span className="indicator"><i className="fa fa-plus" /></span>
                                                 </a>
                                             </h4>
                                         </div>
@@ -75,7 +75,7 @@ class Faq extends React.Component {
                                             <h4 className="acod-title">
                                                 <a data-toggle="collapse" href="#collapseFour5" className="collapsed" data-parent="#accordion5">
                                                     How long will it take to to design and build my project?
-                  <span className="indicator"><i className="fa fa-plus" /></span>
+                <span className="indicator"><i className="fa fa-plus" /></span>
                                                 </a>
                                             </h4>
                                         </div>
@@ -88,14 +88,14 @@ class Faq extends React.Component {
                                             <h4 className="acod-title">
                                                 <a data-toggle="collapse" href="#collapseFive5" className="collapsed" data-parent="#accordion5">
                                                     What should I have at our first meeting for my project?
-                  <span className="indicator"><i className="fa fa-plus" /></span>
+                <span className="indicator"><i className="fa fa-plus" /></span>
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseFive5" className="acod-body collapse">
                                             <div className="acod-content p-tb15">
                                             <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised sheets containing Lorem Ipsum passagese.web design lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              </div>
+            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -1,16 +1,27 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
-// import ReactGA from 'react-ga4';
+// import React from 'react';
+// import { createRoot } from 'react-dom/client';
+// import App from './App';
+// const container = document.getElementById('root');
+// const root = createRoot(container);
 
-// Initialize GA4 with your Measurement ID(
-// ReactGA.initialize('G-XXXXXXXXXX'); 
+// root.render(
+//   <App />
 // );
-// ReactGA.send('pageview'); // Send pageview when the app loads
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import ReactGA from 'react-ga4';
 
-root.render(
-  <App />
+// Initialize GA4
+ReactGA.initialize('G-TTE2P6LCE4');
+
+// Optional: Send pageview on initial load
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
