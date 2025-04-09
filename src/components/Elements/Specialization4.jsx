@@ -5,13 +5,13 @@ import Contact from "../Pages/Contact";
 const services = [
     {
         count: 1,
-        title: `Cleaning Services`,
+        title: `Facade Cleaning`,
         icon: require('./../../images/icon/crane-1.png'),
         description: '',
     },
     {
         count: 2,
-        title: 'Event Management',
+        title: 'Window Cleaning',
         icon: require('./../../images/icon/renovation.png'),
         description: '',
     },

@@ -7,7 +7,7 @@ import Specialization4 from './../Elements/Specialization4';
 import Team3 from './../Elements/Team3';
 import AboutSummary from './../Elements/AboutSummary';
 
-var bnrimg = require('./../../images/banner/aboutus_banner.jpg');
+var bnrimg = require('./../../images/banner/aboutus.jpg');
 
 class About extends React.Component {
     render() {

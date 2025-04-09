@@ -93,7 +93,7 @@ class Header extends React.Component {
                                         </NavLink>
                                     </div>
                                     <div className="extra-cell">
-                                        <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-angle-left arrow-animation" /></NavLink>
+                                        <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-chevron-circle-right" /></NavLink>
                                     </div>
                                 </div>
                                 {/* ETRA Nav */}

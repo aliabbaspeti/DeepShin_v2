@@ -12,15 +12,15 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import emailjs from "@emailjs/browser";
 
 const servicesList = [
-  "Cleaning Service",
-  "Event Cleaning",
-  "Maintenance",
-  "Manpower Supply",
+  "Facade Cleaning Services",
+  "Window Cleaning Services",
+  "Rope Access Services",
+  "Villa / Apartment Window Cleaning",
+  "Solar Panel Cleaning",
   "Pest Control Services",
-  "Building Cleaning",
-  "Window Cleaning",
   "Water Tank Cleaning",
-  "Duct Cleaning",
+  "Event Cleaning",
+  "Waste Management Services",
 ];
 
 function Contact({ open, handleClose }) {

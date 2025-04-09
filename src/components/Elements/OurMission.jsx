@@ -140,11 +140,11 @@ class OurMission extends Component {
                       With professionalism and care, we've welcomed every challenge, resolving them with a smile and delivering exceptional service to our clients.
                     </p>
                     <ul className="list-angle-right anchor-line">
-                      <li><NavLink to={"/services"}>Post Cleaning</NavLink></li>
-                      <li><NavLink to={"/services"}>Building Maintenance</NavLink></li>
-                      <li><NavLink to={"/services"}>Manpower Service</NavLink></li>
-                      <li><NavLink to={"/services"}>Office Cleaning</NavLink></li>
-                      <li><NavLink to={"/services"}>Maintenance Services</NavLink></li>
+                      <li><NavLink to={"/services"}>Facade Cleaning</NavLink></li>
+                      <li><NavLink to={"/services"}>Window Cleaning</NavLink></li>
+                      <li><NavLink to={"/services"}>Solar Panel Cleaning</NavLink></li>
+                      <li><NavLink to={"/services"}>Pest Control Services</NavLink></li>
+                      <li><NavLink to={"/services"}>Waste Management</NavLink></li>
                     </ul>
                     <div className="text-right">
                       <NavLink to="/about" className="site-button-link" data-hover="Read More">

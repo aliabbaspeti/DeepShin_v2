@@ -53,12 +53,12 @@ const projects = [
         // address: 'Muscat, Sultanate of Oman',
         // filter: 'cat-3'
     },
-    // {
-    //     image: require('./../../images/services/service-projects/dam-construction.jpg'),
-    //     title: 'Dam Construction',
-    //     address: 'Muscat, Sultanate of Oman',
-    //     filter: 'cat-2'
-    // },
+    {
+        image: require('./../../images/services/service-projects/w8.jpg'),
+        // title: 'Dam Construction',
+        // address: 'Muscat, Sultanate of Oman',
+        // filter: 'cat-2'
+    },
 ]
 
 var img1 = require('./../../images/background/bg6.jpg');

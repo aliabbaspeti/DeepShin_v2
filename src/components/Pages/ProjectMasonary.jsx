@@ -24,15 +24,15 @@ const projects = [
         filter: 'cat-1'
     },
     {
-        thumb: require('./../../images/projects/pic-1.jpg'),
-        image: require('./../../images/projects/pic-1.jpg'),
+        thumb: require('./../../images/projects/pic1.jpg'),
+        image: require('./../../images/projects/pic1.jpg'),
         title: 'Central City Building',
         description: 'Engineering your dreams with us.',
         filter: 'cat-2'
     },
     {
-        thumb: require('./../../images/projects/portrait/pic7.jpg'),
-        image: require('./../../images/projects/portrait/pic7.jpg'),
+        thumb: require('./../../images/projects/portrait/pic10.jpg'),
+        image: require('./../../images/projects/portrait/pic10.jpg'),
         title: 'Nathan Brooke House',
         description: 'Engineering your dreams with us.',
         filter: 'cat-3'
@@ -156,7 +156,6 @@ class ProjectMasonary extends React.Component {
                                         </div>
                                     </div>
                                 ))}
-                               
                             </div>
                             {/* GALLERY CONTENT END */}
                             <div className="m-t50 text-center">

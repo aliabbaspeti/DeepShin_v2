@@ -60,27 +60,27 @@ const projects = [
         // width: 'col-md-3',
         // filter: 'cat-1'
     },
-    // {
-    //     image: require('./../../images/projects/pic-l-5.jpg'),
-    //     title: 'Lamp decoration',
-    //     address: 'Aqaba, Jordan',
-    //     width: 'col-md-6',
-    //     filter: 'cat-6'
-    // },
-    // {
-    //     image: require('./../../images/projects/pic-1.jpg'),
-    //     title: 'Building house',
-    //     address: 'Ultanate of Oman',
-    //     width: 'col-md-3',
-    //     filter: 'cat-5'
-    // },
-    // {
-    //     image: require('./../../images/projects/pic-2.jpg'),
-    //     title: 'Spa residence',
-    //     address: 'Perth, Australia',
-    //     width: 'col-md-3',
-    //     filter: 'cat-4'
-    // }
+    {
+        image: require('./../../images/projects/portrait/pic8.jpg'),
+        // title: 'Lamp decoration',
+        // address: 'Aqaba, Jordan',
+        // width: 'col-md-6',
+        // filter: 'cat-6'
+    },
+    {
+        image: require('./../../images/projects/portrait/pic9.jpg'),
+        // title: 'Building house',
+        // address: 'Ultanate of Oman',
+        // width: 'col-md-3',
+        // filter: 'cat-5'
+    },
+    {
+        image: require('./../../images/projects/portrait/pic10.jpg'),
+        // title: 'Spa residence',
+        // address: 'Perth, Australia',
+        // width: 'col-md-3',
+        // filter: 'cat-4'
+    }
 ]
 
 class OurProject extends React.Component {
@@ -109,7 +109,7 @@ class OurProject extends React.Component {
     render() {
         return (
             <>
-                <div className="section-full mobile-page-padding p-t80 p-b30 square_shape2 ">
+                <div className="section-full mobile-page-padding p-t50 p-b30 square_shape2 ">
                     <div className="container">
                         {/* TITLE START */}
                         <div className="section-head">
@@ -123,7 +123,7 @@ class OurProject extends React.Component {
                         <div className="section-content">
                             <div className="portfolio-wrap row mfp-gallery product-stamp clearfix">
                                 {/* COLUMNS 1 */}
-                                <div className="stamp col-md-3 col-sm-6 m-b30">
+                                <div className="stamp col-md-1 col-sm-1 m-b30">
                                     {/* <div className="bg-gray p-a30"/> */}
                                         <div className="filter-wrap">
                                             <ul className="filter-navigation masonry-filter text-uppercase">

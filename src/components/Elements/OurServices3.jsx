@@ -5,66 +5,66 @@ import Contact from "../Pages/Contact";
 const services = [
   {
     count: 1,
-    title: "Cleaning Service",
+    title: "Facade Cleaning",
     flaticon: "flaticon-city",
     description:
-      "Expert cleaning for homes and offices, eco-friendly and hassle-free.",
+      "",
   },
   {
     count: 2,
-    title: "Event Cleaning",
-    flaticon: "flaticon-paint",
+    title: "Window Cleaning",
+    flaticon: "flaticon-window",
     description:
-      "Professional event cleaning, any size, any venue. We restore your space quickly and efficiently.",
+      "",
   },
   {
     count: 3,
-    title: "Maintenance",
+    title: "Rope Access",
     flaticon: "flaticon-crane",
     description:
-      "Provides comprehensive maintenance services, including electrical and AC maintenance, ensuring your space is clean, functional, and comfortable.",
+      "",
   },
   {
     count: 4,
-    title: "Manpower Supply",
+    title: "Villa / Apartment Window Cleaning",
     flaticon: "flaticon-decorating",
     description:
-      "Delivers skilled manpower services for maintenance, cleaning, electrical, and AC needs, ensuring professional.",
+      "",
   },
   {
     count: 5,
-    title: "Pest Control Services",
+    title: "Solar Panel Cleaning",
     flaticon: "flaticon-chart",
     description:
-      "Effective and eco-friendly pest control services to keep your home or business free from pests and ensure a safe, healthy environment.",
+      "",
   },
   {
     count: 6,
-    title: "Building Cleaning",
+    title: "Pest Control",
     flaticon: "flaticon-sketch",
     description:
-      "Top-quality building cleaning services, ensuring pristine and well-maintained spaces for both residential and commercial properties",
+      "",
   },
   {
     count: 7,
-    title: "Window Cleaning",
+    title: "Water Tank Cleaning",
     flaticon: "flaticon-builder",
     description:
-      "Sparkling windows guaranteed! Professional window cleaning with streak-free results. Safe, eco-friendly, and flexible scheduling.",
+      "",
   },
   {
     count: 8,
-    title: "Water Tank Cleaning",
+    title: "Event Cleaning",
     flaticon: "flaticon-drill",
     description:
-      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+      "",
   },
   {
     count: 9,
-    title: "Duct Cleaning",
+    title: "Waste Management Services",
     flaticon: "flaticon-art-and-design",
     description:
-      "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.",
+      "",
   },
 ];
 
@@ -128,7 +128,7 @@ class OurServices3 extends React.Component {
             <div className="section-content">
               <div className="row">
                 {services.map((item, index) => (
-                  <div key={index} className="col-md-4 col-sm-6">
+                  <div key={index} className="col-md-4 col-sm-4">
                     <div className="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
                       <div
                         className="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving"

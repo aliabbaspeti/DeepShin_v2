@@ -76,7 +76,9 @@ class About4 extends React.Component {
                                             <span className="large-title-info">Years of Experience</span>
                                         </div>
                                         <h3 className="font-weight-600">Trust us to enhance your space and make every occasion memorable.</h3>
-                                        <p>With a focus on <strong>Reliability</strong> and <strong>Customer Satisfaction</strong> Deep Shine Cleaning Services continues to build long-lasting relationships with clients who trust me to maintain spotless and welcoming environments.</p>
+                                        <p>With a focus on <strong>Reliability</strong> and <strong>Customer Satisfaction</strong> Deep Shine Technical Services continues to build long-lasting relationships with clients who trust me to maintain spotless and welcoming environments.
+                                        With our best clean team, we specialize in window cleaning that goes beyond the surface. with all basic services that just wipe windows, we wash the glass and frames completely according to your needs.</p>
+                                        <p>We are also providing best and  reliable apartment cleaning services to keep your apartment clean and  fresh. we remove heavy dust to maintain a clean and healthy environment, our team handle every thing with care and attention.</p>
                                         <div className="author-info p-t20">
                                             {/* <div className="author-signature">
                                                 <img src={require('./../../images/Signature+Black.png')} alt="Signature" width={150} />

@@ -19,8 +19,8 @@ class Specialization3 extends React.Component {
                                     <div className="image-effect-one hover-shadow">
                                         <img src={require('../../images/services/1.jpg')}  alt=""/>
                                         <div className="figcaption">
-                                            <h4>Office Cleaning</h4>
-                                            <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
+                                            <h4>Facade Cleaning</h4>
+                                            <NavLink to="/services"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -28,8 +28,8 @@ class Specialization3 extends React.Component {
                                     <div className="image-effect-one hover-shadow">
                                         <img src={require('../../images/services/2.jpg')} alt="" />
                                         <div className="figcaption">
-                                            <h4>Electrical Maintenance</h4>
-                                            <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
+                                            <h4>Window cleaning</h4>
+                                            <NavLink to="/services"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -37,8 +37,8 @@ class Specialization3 extends React.Component {
                                     <div className="image-effect-one hover-shadow">
                                         <img src={require('../../images/services/3.jpg')} alt=""/>
                                         <div className="figcaption bg-dark">
-                                            <h4>Pest Control</h4>
-                                            <NavLink to="/project-detail"><i className="link-plus bg-primary" /></NavLink>
+                                            <h4>Maintenance</h4>
+                                            <NavLink to="/services"><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>

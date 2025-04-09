@@ -16,7 +16,7 @@ class Specialization extends React.Component {
                                     <div className="image-effect-one hover-shadow">
                                         <img src={require('../../images/pic1.jpg')} alt=""/>
                                         <div className="figcaption">
-                                            <h4>Building Cleaning</h4>
+                                            <h4>Fascade Cleaning</h4>
                                             {/* <p>Engineering your dreams with us.</p> */}
                                             <NavLink to="/services" ><i className="link-plus bg-primary" /></NavLink>
                                         </div>

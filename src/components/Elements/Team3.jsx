@@ -4,19 +4,19 @@ import { NavLink } from 'react-router-dom';
 const teamMembers = [
     {
         image: require('./../../images/our-team4/farman.png'),
-        membername: 'Farman',
+        membername: 'Muhammad Farman',
         position: 'Managing Director'
     },
-    {
-        image: require('./../../images/our-team4/testimg.png'),
-        membername: 'Ben Jonson',
-        position: 'Operation Manager'
-    },
-    {
-        image: require('./../../images/our-team4/testimg.png'),
-        membername: 'Ashley Fletcher',
-        position: 'Finances'
-    }
+    // {
+    //     image: require('./../../images/our-team4/cleaning-team.png'),
+    //     membername: 'Ben Jonson',
+    //     position: 'Operation Manager'
+    // },
+    // {
+    //     image: require('./../../images/our-team4/testimg.png'),
+    //     membername: 'Ashley Fletcher',
+    //     position: 'Finances'
+    // }
 ]
 
 class Team3 extends React.Component {

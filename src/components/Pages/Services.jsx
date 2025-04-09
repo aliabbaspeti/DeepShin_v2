@@ -9,7 +9,7 @@ import OurValue3 from '../Elements/OurValue3';
 import OurProject3 from '../Elements/OurProject3';
 // import Faq from '../Elements/Faq';
 
-var bnrimg = require('./../../images/banner/service_banner.jpg');
+var bnrimg = require('./../../images/banner/services.jpg');
 
 class Services extends React.Component {
     render() {
@@ -20,10 +20,10 @@ class Services extends React.Component {
                 <div className="page-content">
                     <Banner title="Diversified services. Unvarying quality." pagename="Services" bgimage={bnrimg}/>
                     <AboutCompany />
-                    <Specialization3 />
                     <OurServices3 />
+                    <Specialization3 />
                     <OurValue3 />
-                    <OurProject3 />
+                    {/* <OurProject3 /> */}
                     {/* <Faq /> */}
                 <Footer />
                     
